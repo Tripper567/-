@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Курсач"
         mc:Ignorable="d"
-        Title="OplataUsl" Height="538.5" Width="708.5">
-    <Grid Margin="0,0,2,4">
+        Title="OplataUsl" Height="541.5" Width="687.5">
+    <Grid Margin="0,0,24,5">
         <ComboBox x:Name="typeuCB" HorizontalAlignment="Left" Margin="44,138,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.988,-1" IsReadOnly="True">
             <ListBoxItem Content="ЖКХ"/>
         </ComboBox>
