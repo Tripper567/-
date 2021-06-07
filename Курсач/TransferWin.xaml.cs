@@ -40,6 +40,9 @@ namespace Курсач
                 if (senderCardCB.SelectedItem.ToString() == c.Cardnum) Cardsender = c;    
             }
             if (reciever != null && Cardsender != null) doOperation(reciever, Cardsender);
+
+            TransferDG.ItemsSource = DB.trans;
+            TransferDG.Items.Refresh();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

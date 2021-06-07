@@ -13,7 +13,7 @@
         <Label Content="Снятие " HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" FontSize="22"/>
         <Label Content="Выберите карту :" HorizontalAlignment="Left" Margin="45,54,0,0" VerticalAlignment="Top"/>
         <Label Content=" Введите сумму :" HorizontalAlignment="Left" Margin="45,122,0,0" VerticalAlignment="Top"/>
-        <Button Content="Отмена" HorizontalAlignment="Left" Margin="173,212,0,0" VerticalAlignment="Top" Width="82" Height="33" Click="Button_Click_1"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="173,212,0,0" VerticalAlignment="Top" Width="82" Height="33" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
