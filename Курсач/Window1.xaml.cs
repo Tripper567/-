@@ -26,7 +26,7 @@ namespace Курсач
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PoCarte poCarte = new PoCarte();
+            PoCarte poCarte = new PoCarte(this);
             poCarte.Show();
 
         }

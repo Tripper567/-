@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="Carta.cs" />
     <Compile Include="DB.cs" />
+    <Compile Include="DelegateClass.cs" />
     <Compile Include="getMoneyFromcard.xaml.cs">
       <DependentUpon>getMoneyFromcard.xaml</DependentUpon>
     </Compile>

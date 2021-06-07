@@ -4,9 +4,10 @@ namespace Курсач
 {
     public partial class PoCarte : Window
     {
-        public PoCarte()
+        public PoCarte(Window1 window)
         {
             InitializeComponent();
+            win = window;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -17,8 +18,9 @@ namespace Курсач
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Transfer1 transfer1 = new Transfer1();
+            Transfer1 transfer1 = new Transfer1(win);
             transfer1.Show();
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -32,6 +34,8 @@ namespace Курсач
             getMoneyFromcard g = new getMoneyFromcard();
             g.Show();
         }
+
+        Window1 win;
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {

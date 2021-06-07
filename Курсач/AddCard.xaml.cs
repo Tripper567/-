@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows;
 
+
 namespace Курсач
 {
     /// <summary>
@@ -62,6 +63,8 @@ namespace Курсач
             Window.Show();
             this.Close();
         }
+
+       
     }
     }
 
