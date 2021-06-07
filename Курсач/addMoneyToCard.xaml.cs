@@ -40,7 +40,7 @@ namespace Курсач
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Window1 Window = new Window1();
+            PoCarte Window = new PoCarte();
 
 
             Window.Owner = this;

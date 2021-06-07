@@ -41,5 +41,15 @@ namespace Курсач
                 }
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            PoCarte Window = new PoCarte();
+
+
+            Window.Owner = this;
+            Window.Show();
+            this.Close();
+        }
     }
 }
