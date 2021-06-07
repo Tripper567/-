@@ -5,18 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Курсач"
         mc:Ignorable="d"
-        Title="OplataUsl" Height="531" Width="800">
-    <Grid Margin="0,0,12,-1">
-        <ComboBox x:Name="typeuCB" HorizontalAlignment="Left" Margin="216,64,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.988,-1" IsReadOnly="True">
+        Title="OplataUsl" Height="538.5" Width="708.5">
+    <Grid Margin="0,0,2,4">
+        <ComboBox x:Name="typeuCB" HorizontalAlignment="Left" Margin="44,138,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.988,-1" IsReadOnly="True">
             <ListBoxItem Content="ЖКХ"/>
         </ComboBox>
-        <Label Content="Тип услуги" HorizontalAlignment="Left" Margin="39,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.553,-0.404" Width="103"/>
-        <Label Content="Введите сумму:" HorizontalAlignment="Left" Margin="39,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.553,-0.404" Width="103"/>
-        <TextBox x:Name="summTB" HorizontalAlignment="Left" Height="23" Margin="216,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Oplata" HorizontalAlignment="Left" Margin="163,411,0,0" VerticalAlignment="Top" Width="88" Click="Oplata_Click" Height="27" Content="Продолжить"/>
-        <DataGrid HorizontalAlignment="Left" Height="353" Margin="392,74,0,0" VerticalAlignment="Top" Width="359"/>
-        <Label Content="Выберите карту" HorizontalAlignment="Left" Margin="39,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.553,-0.404" Width="103"/>
-        <ComboBox x:Name="chooseCardCB" HorizontalAlignment="Left" Margin="216,153,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.988,-1"/>
+        <Label Content="Выберите тип услуги :" HorizontalAlignment="Left" Margin="44,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.553,-0.404" Width="130"/>
+        <Label Content="Введите сумму:" HorizontalAlignment="Left" Margin="44,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.553,-0.404" Width="130"/>
+        <TextBox x:Name="summTB" HorizontalAlignment="Left" Height="24" Margin="44,231,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.3,1.375"/>
+        <Button x:Name="Oplata" HorizontalAlignment="Left" Margin="28,400,0,0" VerticalAlignment="Top" Width="96" Click="Oplata_Click" Height="51" Content="Продолжить"/>
+        <DataGrid x:Name="OplataUslDG" HorizontalAlignment="Left" Height="389" Margin="275,96,0,0" VerticalAlignment="Top" Width="367"/>
+        <Label Content="Выберите карту" HorizontalAlignment="Left" Margin="44,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.553,-0.404" Width="130"/>
+        <ComboBox x:Name="chooseCardCB" HorizontalAlignment="Left" Margin="44,322,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.988,-1"/>
+        <Label Content="Оплата услуг" HorizontalAlignment="Left" Margin="300,27,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="156,400,0,0" VerticalAlignment="Top" Width="96" Height="51" Click="Button_Click"/>
 
     </Grid>
 </Window>

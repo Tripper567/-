@@ -13,6 +13,9 @@ namespace Курсач
         {
             InitializeComponent();
             updateCardCB();
+            typeuCB.Items.Add("Интернет и ТВ");
+            typeuCB.Items.Add("ГИБДД");
+            typeuCB.Items.Add("Налоги");
         }
 
         void updateCardCB()
@@ -39,11 +42,23 @@ namespace Курсач
                 }
                 else MessageBox.Show($"На карте недостаточно средств!\n Баланс карты: {card.CardBalance}");
             }
+            OplataUslDG.ItemsSource = DB.oplataUs;
+            OplataUslDG.Items.Refresh();
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            PoCarte Window = new PoCarte();
+
+
+            Window.Owner = this;
+            Window.Show();
+            this.Close();
         }
     }
 }
