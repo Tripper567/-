@@ -41,5 +41,15 @@ namespace Курсач
             }
             if (reciever != null && Cardsender != null) doOperation(reciever, Cardsender);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            PoCarte Window = new PoCarte();
+
+
+            Window.Owner = this;
+            Window.Show();
+            this.Close();
+        }
     }
 }
