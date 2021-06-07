@@ -1,0 +1,57 @@
+﻿using System.Collections.ObjectModel;
+using System.Windows;
+
+namespace Курсач
+{
+    /// <summary>
+    /// Логика взаимодействия для AddCard.xaml
+    /// </summary>
+    public partial class AddCard : Window
+    {
+        public AddCard()
+        {
+            InitializeComponent();
+            
+        }
+
+        ObservableCollection<Carta> cards = DB.cards;
+
+        private void CardBT_Click(object sender, RoutedEventArgs e)
+        {
+            DB.cards.Add(new Carta(NumCardTB.Text, fioCardTB.Text, CvvCaardTB.Text, dateTb.Text, BankSystemCB.Text, NameBankCB.Text, 0));
+            DB.operationID++;
+            UpdateGrid();
+
+            UpdateGrid();
+        }
+
+
+
+        void UpdateGrid()
+        {
+            DataGridCard.ItemsSource = DB.cards;
+            DataGridCard.Items.Refresh();
+            //DataGridCard.Items.Clear();
+            //DataGridCard.ItemsSource = DB.cards; 
+        }
+
+        private void SaveCard_Click(object sender, RoutedEventArgs e)
+        {
+            
+                Serialize serialize = new Serialize();
+                serialize.Save();
+                MessageBox.Show("Файл успешно сохранен!");
+            UpdateGrid();
+            }
+
+
+        private void LogCard_Click(object sender, RoutedEventArgs e)
+        {
+            Serialize serialize = new Serialize();
+            serialize.Load();
+            MessageBox.Show("Файл успешно загружен!");
+            UpdateGrid();
+        }
+    }
+    }
+
