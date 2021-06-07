@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Курсач"
         mc:Ignorable="d"
-        Title="addMoneyToCard" Height="200" Width="200">
-    <Grid>
-        <ComboBox x:Name="cardsCB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="balanceTB" HorizontalAlignment="Left" Height="23" Margin="27,55,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="27,102,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        Title="addMoneyToCard" Height="264" Width="277">
+    <Grid Margin="0,0,2,2">
+        <ComboBox x:Name="cardsCB" HorizontalAlignment="Left" Margin="46,86,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="balanceTB" HorizontalAlignment="Left" Height="23" Margin="46,147,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Продолжить" HorizontalAlignment="Left" Margin="46,189,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="Выберите карту :" HorizontalAlignment="Left" Margin="46,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пополнение" HorizontalAlignment="Left" Margin="67,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Введите сумму :" HorizontalAlignment="Left" Margin="46,116,0,0" VerticalAlignment="Top"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="144,189,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

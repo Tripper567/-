@@ -32,5 +32,15 @@ namespace Курсач
             getMoneyFromcard g = new getMoneyFromcard();
             g.Show();
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Window1 Window = new Window1();
+
+
+            Window.Owner = this;
+            Window.Show();
+            this.Close();
+        }
     }
 }

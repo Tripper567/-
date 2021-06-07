@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="PoCarte" Height="450" Width="800">
     <Grid>
-        <Button Content="Оплата услуг" HorizontalAlignment="Left" Margin="318,141,0,0" VerticalAlignment="Top" Width="188" Height="70" Click="Button_Click"/>
-        <Button Content="Переводы" HorizontalAlignment="Left" Margin="549,141,0,0" VerticalAlignment="Top" Width="190" Height="70" Click="Button_Click_1">
+        <Button Content="Оплата услуг" HorizontalAlignment="Left" Margin="292,105,0,0" VerticalAlignment="Top" Width="188" Height="70" Click="Button_Click"/>
+        <Button Content="Переводы" HorizontalAlignment="Left" Margin="524,105,0,0" VerticalAlignment="Top" Width="188" Height="70" Click="Button_Click_1">
 
         </Button>
-        <Button Content="Добавить денег на карту" HorizontalAlignment="Left" Margin="96,147,0,0" VerticalAlignment="Top" Width="146" Height="58" Click="Button_Click_2"/>
-        <Button Content="Снять деньги с карты" HorizontalAlignment="Left" Margin="96,254,0,0" VerticalAlignment="Top" Width="146" Height="58" Click="Button_Click_3"/>
+        <Button Content="Добавить денег на карту" HorizontalAlignment="Left" Margin="70,105,0,0" VerticalAlignment="Top" Width="188" Height="70" Click="Button_Click_2"/>
+        <Button Content="Снять деньги с карты" HorizontalAlignment="Left" Margin="70,209,0,0" VerticalAlignment="Top" Width="188" Height="70" Click="Button_Click_3"/>
+        <Button Content="На главный экран" HorizontalAlignment="Left" Margin="292,209,0,0" VerticalAlignment="Top" Width="188" Height="70" Click="Button_Click_4"/>
     </Grid>
 </Window>
