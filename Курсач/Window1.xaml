@@ -8,9 +8,9 @@
         Title="Window1" Height="450" Width="800">
     <Grid>
         <Button Content="По карте " HorizontalAlignment="Left" Margin="102,154,0,0" VerticalAlignment="Top" Width="232" Height="144" FontSize="18" Click="Button_Click"/>
-        <Button Content="Без карты " HorizontalAlignment="Left" Margin="454,154,0,0" VerticalAlignment="Top" Width="232" Height="144" FontSize="18" Click="Button_Click_1"/>
+        <Button Content="Без карты " HorizontalAlignment="Left" Margin="444,154,0,0" VerticalAlignment="Top" Width="233" Height="144" FontSize="18" Click="Button_Click_1"/>
         <Label Content="Выберите способ" HorizontalAlignment="Left" Margin="235,44,0,0" VerticalAlignment="Top" Height="57" Width="342" FontSize="36"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="203,340,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="Создать карту" HorizontalAlignment="Left" Margin="254,336,0,0" VerticalAlignment="Top" Width="291" Click="Button_Click_2" Height="60" FontSize="16"/>
 
     </Grid>
 </Window>

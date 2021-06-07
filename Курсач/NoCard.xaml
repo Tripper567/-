@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="NoCard" Height="324.5" Width="593">
     <Grid Margin="0,0,-8,-2" Height="295" VerticalAlignment="Top">
-        <TextBox HorizontalAlignment="Left" Height="50" Margin="120,15,0,0" TextWrapping="Wrap" Text="  Оплата мобильной связи" VerticalAlignment="Top" Width="319" FontSize="22"/>
-        <Slider x:Name="summSL" HorizontalAlignment="Left" Margin="147,182,0,0" VerticalAlignment="Top" Height="38" Width="144" Maximum="10000" SmallChange="100"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="120,251,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
-        <DataGrid x:Name="OplataMob" HorizontalAlignment="Left" Height="179" Margin="310,70,0,0" VerticalAlignment="Top" Width="211"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="131,15,0,0" TextWrapping="Wrap" Text="  Оплата мобильной связи" VerticalAlignment="Top" Width="319" FontSize="22"/>
+        <Slider x:Name="summSL" HorizontalAlignment="Left" Margin="147,182,0,0" VerticalAlignment="Top" Height="38" Width="144" Maximum="10000" SmallChange="100" AutoToolTipPlacement="TopLeft"/>
+        <Button Content="Продолжить" HorizontalAlignment="Left" Margin="36,229,0,0" VerticalAlignment="Top" Width="106" Click="Button_Click" Height="50"/>
+        <DataGrid x:Name="OplataMob" HorizontalAlignment="Left" Height="209" Margin="310,70,0,0" VerticalAlignment="Top" Width="251"/>
         <TextBox x:Name="phoneTB" HorizontalAlignment="Left" Height="22" Margin="167,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
         <Label Content="Введите телефон:" HorizontalAlignment="Left" Margin="36,77,0,0" VerticalAlignment="Top" Height="26" Width="106"/>
         <Label Content="Выберите сумму:" HorizontalAlignment="Left" Margin="36,182,0,0" VerticalAlignment="Top" Height="26" Width="106"/>
@@ -18,6 +18,7 @@
         <Label Content="Оператор" HorizontalAlignment="Left" Margin="36,140,0,0" VerticalAlignment="Top" Height="27" Width="118" RenderTransformOrigin="0.492,-0.852"/>
         <ComboBox x:Name="OperCB" HorizontalAlignment="Left" Margin="167,145,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="BankCB" HorizontalAlignment="Left" Margin="167,113,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="На главный экран" HorizontalAlignment="Left" Margin="178,229,0,0" VerticalAlignment="Top" Width="113" Height="50" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
