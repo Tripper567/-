@@ -52,6 +52,16 @@ namespace Курсач
             MessageBox.Show("Файл успешно загружен!");
             UpdateGrid();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 Window = new Window1();
+
+
+            Window.Owner = this;
+            Window.Show();
+            this.Close();
+        }
     }
     }
 

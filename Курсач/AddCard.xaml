@@ -5,38 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Курсач"
         mc:Ignorable="d"
-        Title="AddCard" Height="450" Width="800">
-    <Grid>
-        <Label Content="Нрмер карты" HorizontalAlignment="Left" Margin="53,40,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
-        <Label Content="ФИО" HorizontalAlignment="Left" Margin="53,90,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
-        <Label Content="CVV" HorizontalAlignment="Left" Margin="53,140,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
-        <Label Content="Срок действия карты" HorizontalAlignment="Left" Margin="53,183,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
-        <Label Content="Банковская система" HorizontalAlignment="Left" Margin="53,225,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
-        <Label Content="Наименование банка" HorizontalAlignment="Left" Margin="53,266,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="218,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="fioCardTB" HorizontalAlignment="Left" Height="23" Margin="218,94,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="CvvCaardTB" HorizontalAlignment="Left" Height="23" Margin="218,144,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="dateTb" HorizontalAlignment="Left" Height="23" Margin="218,183,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="BankSystemCB" HorizontalAlignment="Left" Margin="218,231,0,0" VerticalAlignment="Top" Width="120">
+        Title="AddCard" Height="507" Width="816.5">
+    <Grid Margin="0,0,20,5">
+        <Label Content="Нрмер карты" HorizontalAlignment="Left" Margin="60,70,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="60,120,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
+        <Label Content="CVV" HorizontalAlignment="Left" Margin="60,170,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
+        <Label Content="Срок действия карты" HorizontalAlignment="Left" Margin="60,213,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
+        <Label Content="Банковская система" HorizontalAlignment="Left" Margin="60,255,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
+        <Label Content="Наименование банка" HorizontalAlignment="Left" Margin="60,296,0,0" VerticalAlignment="Top" Height="28" Width="182"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="226,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="fioCardTB" HorizontalAlignment="Left" Height="23" Margin="226,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CvvCaardTB" HorizontalAlignment="Left" Height="23" Margin="226,174,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="dateTb" HorizontalAlignment="Left" Height="23" Margin="226,213,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="BankSystemCB" HorizontalAlignment="Left" Margin="226,261,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Visa"/>
             <ComboBoxItem Content="MasterCard"/>
             <ComboBoxItem Content="Мир"/>
         </ComboBox>
-        <TextBox x:Name="NumCardTB" HorizontalAlignment="Left" Height="23" Margin="218,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="NameBankCB" HorizontalAlignment="Left" Margin="218,272,0,0" VerticalAlignment="Top" Width="120">
+        <TextBox x:Name="NumCardTB" HorizontalAlignment="Left" Height="23" Margin="226,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="NameBankCB" HorizontalAlignment="Left" Margin="226,302,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Тинькофф"/>
             <ComboBoxItem Content="ВТБ"/>
             <ComboBoxItem Content="Сбербанк"/>
         </ComboBox>
-        <Button x:Name="CardBT" Content="Button" HorizontalAlignment="Left" Margin="25,329,0,0" VerticalAlignment="Top" Width="118" Height="46" Click="CardBT_Click"/>
-        <DataGrid x:Name="DataGridCard" HorizontalAlignment="Left" Height="307" Margin="372,50,0,0" VerticalAlignment="Top" Width="389" ItemsSource="{Binding cards}">
+        <Button x:Name="CardBT" Content="Добавить " HorizontalAlignment="Left" Margin="32,359,0,0" VerticalAlignment="Top" Width="102" Height="46" Click="CardBT_Click"/>
+        <DataGrid x:Name="DataGridCard" HorizontalAlignment="Left" Height="390" Margin="388,70,0,0" VerticalAlignment="Top" Width="392" ItemsSource="{Binding cards}">
             <DataGrid.Columns>
-               
+
             </DataGrid.Columns>
-            
+
         </DataGrid>
-        <Button x:Name="SaveCard" Content="Сохранить" HorizontalAlignment="Left" Margin="174,342,0,0" VerticalAlignment="Top" Width="75" Click="SaveCard_Click"/>
-        <Button x:Name="LogCard" Content="Загрузить" HorizontalAlignment="Left" Margin="273,342,0,0" VerticalAlignment="Top" Width="75" Click="LogCard_Click"/>
+        <Button x:Name="SaveCard" Content="Сохранить" HorizontalAlignment="Left" Margin="154,359,0,0" VerticalAlignment="Top" Width="103" Click="SaveCard_Click" Height="46"/>
+        <Button x:Name="LogCard" Content="Загрузить" HorizontalAlignment="Left" Margin="272,359,0,0" VerticalAlignment="Top" Width="103" Click="LogCard_Click" Height="46"/>
+        <Label Content="Создание карты&#xD;&#xA;" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" FontSize="22" Height="45" Width="190"/>
+        <Button Content="На главный экран" HorizontalAlignment="Left" Margin="135,421,0,0" VerticalAlignment="Top" Width="140" FontSize="14" Height="40" Click="Button_Click"/>
 
     </Grid>
 </Window>
