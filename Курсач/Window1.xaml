@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Курсач"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid>
+        Title="Window1" Height="488" Width="813">
+    <Grid Margin="0,0,2,3">
         <Button Content="По карте " HorizontalAlignment="Left" Margin="102,154,0,0" VerticalAlignment="Top" Width="232" Height="144" FontSize="18" Click="Button_Click"/>
         <Button Content="Без карты " HorizontalAlignment="Left" Margin="444,154,0,0" VerticalAlignment="Top" Width="233" Height="144" FontSize="18" Click="Button_Click_1"/>
         <Label Content="Выберите способ" HorizontalAlignment="Left" Margin="235,44,0,0" VerticalAlignment="Top" Height="57" Width="342" FontSize="36"/>
-        <Button Content="Создать карту" HorizontalAlignment="Left" Margin="102,333,0,0" VerticalAlignment="Top" Width="232" Click="Button_Click_2" Height="60" FontSize="16"/>
-        <ListBox x:Name="ListBoxD" HorizontalAlignment="Left" Height="60" Margin="444,333,0,0" VerticalAlignment="Top" Width="233"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="666,71,0,0" VerticalAlignment="Top" Width="75" Click="button_Click_3"/>
+        <Button Content="Создать карту" HorizontalAlignment="Left" Margin="102,333,0,0" VerticalAlignment="Top" Width="232" Click="Button_Click_2" Height="91" FontSize="16"/>
+        <ListBox x:Name="ListBoxD" HorizontalAlignment="Left" Height="56" Margin="444,333,0,0" VerticalAlignment="Top" Width="233"/>
+        <Button x:Name="button" Content="Полиморизм" HorizontalAlignment="Left" Margin="444,394,0,0" VerticalAlignment="Top" Width="233" Click="button_Click_3" Height="30"/>
 
     </Grid>
 </Window>

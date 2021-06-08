@@ -39,5 +39,15 @@ namespace Курсач
             Operation operation = DB.oplataUs[dataGridCard.SelectedIndex];
             listBoxPoly.Items.Add(operation.display());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 Window = new Window1();
+
+
+            Window.Owner = this;
+            Window.Show();
+            this.Close();
+        }
     }
 }
