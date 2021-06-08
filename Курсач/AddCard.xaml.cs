@@ -64,7 +64,24 @@ namespace Курсач
             this.Close();
         }
 
-       
+        private void buttonDel_Click(object sender, RoutedEventArgs e)
+        {
+            DB.cards.RemoveAt(DataGridCard.SelectedIndex);
+            DataGridCard.ItemsSource = DB.cards;
+            DataGridCard.Items.Refresh();
+        }
+
+        private void buttonRed_Click(object sender, RoutedEventArgs e)
+        {
+            DB.cards[DataGridCard.SelectedIndex].Cardnum = NumCardTB.Text;
+            DB.cards[DataGridCard.SelectedIndex].Fio = fioCardTB.Text;
+            DB.cards[DataGridCard.SelectedIndex].Cvv = CvvCaardTB.Text;
+            DB.cards[DataGridCard.SelectedIndex].CardDate = dateTb.Text;
+            DB.cards[DataGridCard.SelectedIndex].BankSystem = BankSystemCB.Text;
+            DB.cards[DataGridCard.SelectedIndex].BankName = NameBankCB.Text;
+            DataGridCard.ItemsSource = DB.cards;
+            DataGridCard.Items.Refresh();
+        }
     }
     }
 

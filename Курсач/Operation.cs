@@ -44,12 +44,7 @@ namespace Курсач
         }
 
 
-        public virtual string display()
-        {
-            string text = $"Дата {this.date}\n";
-            text += $"Сумма: {this.sum}";
-            return text;
-        }
+        public virtual string display() => $"Дата {this.date}\nСумма: {this.sum}";
 
     }
 }

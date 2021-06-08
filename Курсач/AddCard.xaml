@@ -38,7 +38,9 @@
         <Button x:Name="SaveCard" Content="Сохранить" HorizontalAlignment="Left" Margin="154,359,0,0" VerticalAlignment="Top" Width="103" Click="SaveCard_Click" Height="46"/>
         <Button x:Name="LogCard" Content="Загрузить" HorizontalAlignment="Left" Margin="272,359,0,0" VerticalAlignment="Top" Width="103" Click="LogCard_Click" Height="46"/>
         <Label Content="Создание карты&#xD;&#xA;" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" FontSize="22" Height="45" Width="190"/>
-        <Button Content="На главный экран" HorizontalAlignment="Left" Margin="135,421,0,0" VerticalAlignment="Top" Width="140" FontSize="14" Height="40" Click="Button_Click"/>
+        <Button Content="На главный экран" HorizontalAlignment="Left" Margin="272,420,0,0" VerticalAlignment="Top" Width="103" FontSize="14" Height="40" Click="Button_Click"/>
+        <Button x:Name="buttonDel" Content="Удалить" HorizontalAlignment="Left" Margin="32,420,0,0" VerticalAlignment="Top" Width="102" Height="40" Click="buttonDel_Click"/>
+        <Button x:Name="buttonRed" Content="Редактировать" HorizontalAlignment="Left" Margin="154,420,0,0" VerticalAlignment="Top" Width="103" Height="40" Click="buttonRed_Click"/>
 
     </Grid>
 </Window>

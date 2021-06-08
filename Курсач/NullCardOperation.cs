@@ -20,11 +20,7 @@ namespace Курсач
             set { this.phonenumber = value is string ? value : null; }
         }
 
-        public override string display()
-        {
-            string text = $"Номер телефона: {this.phonenumber}";
-            return text;
-        }
+        public override string display() => $"Номер телефона: {this.phonenumber}\n" + base.display();
 
     }
 }

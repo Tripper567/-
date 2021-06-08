@@ -42,5 +42,11 @@ namespace Курсач
             AddCard a = new AddCard();
             a.Show();
         }
+
+        private void button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Window2 window = new Window2();
+            window.Show();
+        }
     }
 }

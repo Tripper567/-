@@ -20,11 +20,7 @@ namespace Курсач
             set { this.card = value; }
         }
 
-        public new string display()
-        {
-            string text = $"Номер карты: {this.card.Cardnum}";
-            return text;
-        }
+        public override string display() => $"Номер карты: {this.card.Cardnum}\n" + base.display();
 
     }
 }
