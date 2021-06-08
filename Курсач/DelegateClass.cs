@@ -35,7 +35,7 @@ namespace Курсач
 
         Display display;
 
-        public void OnPlanetAdded()
+        public void OnPerevAdded()
         {
             
             avava = ("Перевод осуществлен!");
@@ -46,7 +46,7 @@ namespace Курсач
             switch (ava)
             {
                 case "Курсач.Trans1":
-                    display += OnPlanetAdded;
+                    display += OnPerevAdded;
                     break;
 
             }

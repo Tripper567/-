@@ -12,7 +12,7 @@ namespace Курсач
     [Serializable]
     public class Block
     {
-        public ObservableCollection<Carta> game = new ObservableCollection<Carta>();
+        public ObservableCollection<Carta> g = new ObservableCollection<Carta>();
      
     }
 
@@ -23,7 +23,7 @@ namespace Курсач
 
         Block CaptureBlock(Block Temp)
         {
-            Temp.game = DB.cards;
+            Temp.g = DB.cards;
           
             return Temp;
         }
@@ -48,7 +48,7 @@ namespace Курсач
 
         void SetDB(Block loadBlock)
         {
-            DB.cards = loadBlock.game;
+            DB.cards = loadBlock.g;
          
         }
 
